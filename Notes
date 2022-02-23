@@ -1,1 +1,27 @@
 Reading up on menus.
+
+Psudo--
+PC Menu {
+boolean exit;
+PSV Main {
+Menu menu = new Menu();
+menu.printHeader();
+menu.printMenu();
+}
+PV runMenu() {
+printHeader();
+while(!exit){
+printMenu();
+}}
+PV printHeader() {
+sout ""
+sout ""
+sout ""
+sout >>exit
+}
+PV printMenu(){
+sout
+sout
+sout
+sout
+}
