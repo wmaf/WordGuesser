@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class wordHuntMenu {
     boolean exit;
 
+
     //Testing via public void
     public static void main(String[] args) {
         wordHuntMenu menu = new wordHuntMenu();
@@ -19,6 +20,7 @@ public class wordHuntMenu {
         while (!exit) {
             printMenu();
             int userChoice = getUserInput();
+            playGame(userChoice);
         }
     }
 
@@ -48,4 +50,18 @@ public class wordHuntMenu {
         }
         return userSelection;
     }
-}
+
+    private void playGame(int selection) {
+        switch (selection) {
+            case 1:
+                //playTheGame();
+                break;
+            case 2:
+                exit = true;
+                System.out.println("Don't go try again!");
+                break;
+            default:
+                System.out.println("An error has occurred please restart the program.");
+            }
+         }
+    }
