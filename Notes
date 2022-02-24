@@ -4,7 +4,7 @@ Psudo--
 PC Menu {
 boolean exit;
 PSV Main {
-Menu menu = new Menu();
+// Menu menu = new Menu();  //To test code
 menu.printHeader();
 menu.printMenu();
 }
@@ -23,5 +23,19 @@ PV printMenu(){
 sout
 sout
 sout
-sout
+sout(exit)
+}
+
+Random Elements  -- - - --
+import java.util.Random;
+
+public class RandomStringFromArray
+{
+  	public static void main(String[] args)
+    {
+      	String[] wordArr={"Lunar", "Tera", "stellar", "Solaris", "Andromeda", Venus, "Mars"};
+      	Random randomize = new Random();
+      	int randomWord = randomize.nextInt(wordArr.length);
+      	System.out.println(wordArr[randomWord]);
+    }
 }
