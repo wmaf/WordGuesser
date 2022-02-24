@@ -39,3 +39,12 @@ public class RandomStringFromArray
       	System.out.println(wordArr[randomWord]);
     }
 }
+String random = (universe[new Random().nextInt(wordArr.length)]);
+OR----
+ public static String randomWord()
+ {
+   String[] possibleWords = {"Lunar", "Tera", "stellar", "Solaris", "Andromeda", Venus, "Mars"};
+   Random random = new Random();
+   int randomIdx = random.nextInt(possibleWords.length);
+
+ }
