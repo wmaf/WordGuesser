@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class wordHuntMenu {
     boolean exit;
-
-
     //Testing via public void
     public static void main(String[] args) {
         wordHuntMenu menu = new wordHuntMenu();
@@ -24,7 +22,6 @@ public class wordHuntMenu {
             playGame(2);
         }
     }
-
     private void printHeader() {
         System.out.println("*-----------------****************--------------------*");
         System.out.println("|               Welcome to Word Hunt!                 |");
@@ -109,7 +106,6 @@ public class wordHuntMenu {
         }while (tries < 10);
     }
         //System.exit(0);
-
     private void exitTheGame() {
         System.out.println("Exit");
         exit = true;
