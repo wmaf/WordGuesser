@@ -46,7 +46,7 @@ public class wordHuntMenu {
             } catch (NumberFormatException e) {
                 System.out.println("Something went wrong here, please try again");
             }
-        }
+        }  //less than 3?
         return userSelection;
     }
 

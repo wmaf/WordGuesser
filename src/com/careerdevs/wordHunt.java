@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class wordHunt {
 
+
     public static void main(String[] args) {
         int tries = 0;
 
@@ -18,8 +19,9 @@ public class wordHunt {
 
         do {
             System.out.println("You have" +" "+ (10 - tries)+ " " + "tries remaining");
-            System.out.println("please enter letter number:" + (tries + 1));
+            System.out.println("please enter a letter #" + (tries + 1));
             String yourLetter = keyboard.nextLine();
+            System.out.println(yourLetter);  //returns letter
             for(int i = 0; i < hiddenWord.length(); i ++) {
                 if (yourLetter.equals(Character.toString(hiddenWord.charAt(i)))) {
                     if(!iterated)
