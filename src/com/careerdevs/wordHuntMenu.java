@@ -69,6 +69,7 @@ public class wordHuntMenu {
     }
 
     private void playTheGame() {
+        //-----------------dump the game here------------------------//
         //System.out.println("Test output");
         int tries = 0;
 
@@ -108,10 +109,6 @@ public class wordHuntMenu {
         }while (tries < 10);
     }
         //System.exit(0);
-
-        //-----------------dump the game here------------------------//
-
-
 
     private void exitTheGame() {
         System.out.println("Exit");
