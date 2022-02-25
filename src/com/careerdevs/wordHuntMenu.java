@@ -26,13 +26,14 @@ public class wordHuntMenu {
     }
 
     private void printHeader() {
-        System.out.println("*--------------------------------------*");
-        System.out.println("|       Welcome to Word Hunt           |");
-        System.out.println("*--------------------------------------*");
+        System.out.println("*-----------------****************--------------------*");
+        System.out.println("|               Welcome to Word Hunt!                 |");
+        System.out.println("|       You guess the word by choosing letters.       |");
+        System.out.println("*-----------------****************--------------------*");
     }
 
     private void printMenu() {
-        System.out.println("Guess the word by choosing a letter.");
+        //System.out.println("Guess the word by choosing a letter.");
         System.out.println("Please make a selection:");
         System.out.println("#(1) To play");
         System.out.println("#(2) To Quit");
