@@ -20,7 +20,8 @@ public class wordHuntMenu {
         while (!exit) {
             printMenu();
             int userChoice = getUserInput();
-            playGame(userChoice);
+            playGame(1);
+            playGame(2);
         }
     }
 
@@ -51,17 +52,33 @@ public class wordHuntMenu {
         return userSelection;
     }
 
-    private void playGame(int selection) {
-        switch (selection) {
+    private void playGame(int userSelection) {
+        switch (userSelection) {
             case 1:
-                //playTheGame();
+                playTheGame();
                 break;
             case 2:
-                exit = true;
-                System.out.println("Don't go try again!");
+                exitTheGame();
+                //exit = true;
+                //System.out.println("Don't go try again!");
                 break;
             default:
                 System.out.println("An error has occurred please restart the program.");
-            }
-         }
+        }
     }
+
+    private void playTheGame() {
+        System.out.println("Oh my");
+
+        //System.exit(0);
+
+        //-----------------dump the game here------------------------//
+
+    }
+
+    private void exitTheGame() {
+        System.out.println("Exit");
+        exit = true;
+        System.exit(0);
+    }
+}
