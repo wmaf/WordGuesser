@@ -9,18 +9,20 @@ public class wordHunt {
         wordHunt menu = new wordHunt();
 //        menu.printHeader();
 //        menu.printMenu();
+
         //*********************End testing
         menu.runMenu();
     }
 
     public void runMenu() {
+
         printHeader();
-        printMenu();
         while (!exit) {
-            int userChoice = getUserInput();
-            playGame(1);
-            playGame(2);
-        }
+            printMenu();
+            int userSelection = getUserInput();
+            playGame(userSelection);
+            System.out.println(getUserInput());
+                   }
     }
     private void printHeader() {
         System.out.println("*-----------------****************--------------------*");
@@ -39,9 +41,9 @@ public class wordHunt {
     private int getUserInput() {
         Scanner scanner = new Scanner(System.in);
         int userSelection = -1;
-        if (userSelection > 2) {
-            System.out.println("invalid entry please choose a number between 1 and 2");
-        }
+//        if (userSelection > 2) {
+//            System.out.println("invalid entry please choose a number between 1 and 2");
+//        }
         while (
                 userSelection < 0 || userSelection <= 3) {// use you variable here
 //            if (userSelection >= 3) {
