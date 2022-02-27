@@ -9,16 +9,15 @@ public class wordHunt {
         wordHunt menu = new wordHunt();
 //        menu.printHeader();
 //        menu.printMenu();
-        //End testing
+        //*********************End testing
         menu.runMenu();
     }
 
     public void runMenu() {
         printHeader();
+        printMenu();
         while (!exit) {
-            printMenu();
-            //int userChoice =
-            getUserInput();
+            int userChoice = getUserInput();
             playGame(1);
             playGame(2);
         }
@@ -40,14 +39,24 @@ public class wordHunt {
     private int getUserInput() {
         Scanner scanner = new Scanner(System.in);
         int userSelection = -1;
-        while (userSelection < 0 || userSelection >= 2) {// use you variable here
+        if (userSelection > 2) {
+            System.out.println("invalid entry please choose a number between 1 and 2");
+        }
+        while (
+                userSelection < 0 || userSelection <= 3) {// use you variable here
+//            if (userSelection >= 3) {
+//                System.out.println("Invalid entry: Please choose a number between 1 and 2.");
+//                System.out.println(userSelection);
+//            }else
             try {
+
                 System.out.println("\nPlease make a selection:");
                 userSelection = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
                 System.out.println("Something went wrong here, please try again");
             }
-        }  //less than 3?
+        }
+
         return userSelection;
     }
 
