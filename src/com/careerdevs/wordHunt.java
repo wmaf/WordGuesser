@@ -9,19 +9,16 @@ public class wordHunt {
         wordHunt menu = new wordHunt();
 //        menu.printHeader();
 //        menu.printMenu();
-
         //*********************End testing
         menu.runMenu();
     }
 
     public void runMenu() {
-
         printHeader();
+        printMenu();
         while (!exit) {
-            printMenu();
             int userSelection = getUserInput();
             playGame(userSelection);
-            System.out.println(getUserInput());
                    }
     }
     private void printHeader() {
